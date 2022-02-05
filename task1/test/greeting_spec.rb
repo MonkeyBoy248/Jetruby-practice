@@ -1,5 +1,12 @@
-require_relative "../greeting"
 require "rspec"
+
+def greeting (name, surname, age)
+  if (age >= 18)
+    "Привет, #{name} #{surname}. Самое время заняться делом!"
+  else
+    "Привет, #{name} #{surname}. Тебе меньше 18 лет, но начать учиться программировать никогда не рано"
+  end
+end
 
 RSpec.describe "Greeting" do
   it "return specific message" do
