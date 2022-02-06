@@ -1,10 +1,7 @@
 def check_str_end(string)
-  if string.upcase.end_with?("CS")
-    2 ** string.length
-  else string.reverse
-  end
+  string.upcase.end_with?("CS") ? 2 ** string.length : string.reverse
 end
 
-result = check_str_end("foobar")
+result = check_str_end("foobarcs")
 
 puts "The result is #{result}"
